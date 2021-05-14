@@ -1,0 +1,5 @@
+file.write("resources/hello.txt", "hello from ghost!")
+
+content := file.read("resources/hello.txt")
+
+print(content)

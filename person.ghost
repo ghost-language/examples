@@ -1,0 +1,14 @@
+function new(name) {
+    // Define our base properties
+    person := {
+        "name": name
+    }
+
+    // Define our methods
+    person.greet := function() {
+        print("Hello, " + person.name)
+    }
+
+    // Return our object
+    return person
+}

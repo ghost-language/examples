@@ -1,0 +1,6 @@
+m := import("math")
+
+print(m.add(4, 6))
+print(m.subtract(4, 6))
+print(m.multiply(4, 6))
+print(m.divide(4, 6))
