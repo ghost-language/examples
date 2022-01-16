@@ -7,7 +7,7 @@ function benchmark(name, callback) {
 
     total := ((end - start) / 1e6).toString()
 
-    print("%s:".format(name), "%sms".format(total))
+    print("%s: %sms".format(name, total))
 }
 
 fibonacci := Fibonacci()
