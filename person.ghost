@@ -1,14 +1,13 @@
-function new(name) {
-    // Define our base properties
-    person := {
-        "name": name
+class Person {
+    name := ""
+    age := 0
+
+    function constructor(name, age) {
+        this.name := name
+        this.age := age
     }
 
-    // Define our methods
-    person.greet := function() {
-        print("Hello, " + person.name)
+    function greet() {
+        print("Hello my name is %s".format(this.name))
     }
-
-    // Return our object
-    return person
 }

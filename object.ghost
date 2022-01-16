@@ -1,4 +1,0 @@
-person := import("person")
-
-major := person.new("Major")
-major.greet()

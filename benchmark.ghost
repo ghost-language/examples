@@ -1,0 +1,25 @@
+import Fibonacci from 'fibonacci'
+
+function benchmark(name, callback) {
+    start := os.clock()
+    callback()
+    end := os.clock()
+
+    total := ((end - start) / 1e6).toString()
+
+    print("%s:".format(name), "%sms".format(total))
+}
+
+fibonacci := Fibonacci()
+
+benchmark("one  ", function() {
+    print(fibonacci.one(15))
+})
+
+benchmark("two  ", function() {
+    print(fibonacci.two(15))
+})
+
+benchmark("three", function() {
+    print(fibonacci.three(15))
+})

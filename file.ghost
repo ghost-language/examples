@@ -1,5 +1,5 @@
-file.write("resources/hello.txt", "hello from ghost!")
+io.write("resources/hello.txt", "hello from ghost!")
 
-content := file.read("resources/hello.txt")
+content := io.read("resources/hello.txt")
 
 print(content)

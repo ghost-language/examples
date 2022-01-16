@@ -1,6 +1,4 @@
-m := import("math")
+import Person from 'person'
 
-print(m.add(4, 6))
-print(m.subtract(4, 6))
-print(m.multiply(4, 6))
-print(m.divide(4, 6))
+john := Person("John", 36)
+john.greet()
