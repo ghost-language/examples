@@ -1,10 +1,10 @@
 class Person {
-    name := ""
-    age := 0
+    name = ""
+    age = 0
 
     function constructor(name, age) {
-        this.name := name
-        this.age := age
+        this.name = name
+        this.age = age
     }
 
     function greet() {

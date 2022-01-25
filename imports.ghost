@@ -1,4 +1,4 @@
 import Person from 'person'
 
-john := Person("John", 36)
+john = Person.new("John", 36)
 john.greet()

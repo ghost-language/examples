@@ -1,7 +1,7 @@
-pattern := "i need (.*)"
-message := "I need coffee".toLowerCase()
-matches := pattern.findAll(message)
+pattern = "i need (.*)"
+message = "I need coffee".toLowerCase()
+matches = pattern.findAll(message)
 
-response := "Why do you think you need {1}?".replace("{1}", matches[1])
+response = "Why do you think you need {1}?".replace("{1}", matches[1])
 
 print(response)

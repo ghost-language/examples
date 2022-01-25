@@ -1,16 +1,16 @@
 import Fibonacci from 'fibonacci'
 
 function benchmark(name, callback) {
-    start := os.clock()
+    start = os.clock()
     callback()
-    end := os.clock()
+    end = os.clock()
 
-    total := ((end - start) / 1e6).toString()
+    total = ((end - start) / 1e6).toString()
 
     print("%s: %sms".format(name, total))
 }
 
-fibonacci := Fibonacci()
+fibonacci = Fibonacci.new()
 
 benchmark("one  ", function() {
     print(fibonacci.one(15))
