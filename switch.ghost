@@ -1,0 +1,13 @@
+beverage = "coffee"
+
+switch (beverage) {
+    case "water" {
+        print("Water is $0.75 per bottle.")
+    }
+    case "juice" {
+        print("Juice is $1.25 per bottle.")
+    }
+    case "coffee", "latte" {
+        print("Coffee and lattes are $2.75 per 12oz.")
+    }
+}
